@@ -1,0 +1,39 @@
+server.port: 8002
+
+# 设置注册中心信息，包括应用程序名称、注册中心地址
+spring.application.name: mars_zuul
+# 应用程序实例显示真实ip地址
+eureka.instance.preferIpAddress: true
+# 配置注册中心集群
+eureka.client.service-url.defaultZone: http://localhost:8001/eureka
+
+# 设置hystrix的过期时间
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 600000
+
+# 设置ribbon的过期时间
+ribbon:
+  ReadTimeout: 600000
+  ConnectTimeout: 600000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+
+
+# 解释：将Cookie 信息下发至下游服务
+zuul.sensitive-headers:     　　　　
+# 解释：将头信息 下发至下游服务
+zuul.add-host-header: "true"
+
+zuul:
+  host:
+    connect-timeout-millis: 600000
+    socket-timeout-millis: 600000
+    max-total-connections: 200
+    max-per-route-connections: 20
+    time-unit: MILLISECONDS
+    time-to-live: 10000

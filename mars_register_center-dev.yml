@@ -2,7 +2,7 @@ spring.application.name: mars_register_center
 server.port: 8001
 
 eureka:
-  instance.hostname: registercenter1
+  instance.hostname: registercenter
   client:
     register-with-eureka: false # 集群应用时 开启
     fetch-registry: false # 集群应用时 开启
