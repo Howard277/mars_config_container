@@ -1,5 +1,5 @@
 spring.application.name: mars_register_center
-server.port: 81
+server.port: 8001
 
 eureka:
   instance.hostname: registercenter1
