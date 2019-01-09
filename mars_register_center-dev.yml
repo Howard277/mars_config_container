@@ -1,0 +1,14 @@
+spring.application.name: mars_register_center
+server.port: 81
+
+eureka:
+  instance.hostname: registercenter1
+  client:
+    register-with-eureka: false # 集群应用时 开启
+    fetch-registry: false # 集群应用时 开启
+    service-url.defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    # 关闭eureka的自我保护模式
+    enable-self-preservation: false
+    # 失效实例检查时间
+    eviction-interval-timer-in-ms: 5000
