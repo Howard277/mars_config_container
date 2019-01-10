@@ -1,5 +1,5 @@
 server:
-  port: 8100
+  port: 8003
 
 # 日志文件配置
 logging:
@@ -63,11 +63,11 @@ spring.jpa:
   properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
 
 # 注册中心配置
-spring.application.name: hb_uam
+spring.application.name: mars_uam
 # 应用程序实例显示真实ip地址
 eureka.instance.preferIpAddress: true
 # 配置注册中心集群
-eureka.client.service-url.defaultZone: http://registercenter1:8001/eureka
+eureka.client.service-url.defaultZone: http://localhost:8001/eureka
 
 # RestTemplate配置
 restTemplateConfig:
