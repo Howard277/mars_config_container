@@ -77,3 +77,5 @@ restTemplateConfig:
   connectTimeout: 30000
   readTimeout: 120000
   connectionRequestTimeout: 30000
+
+productSystemRootUrl: http://www.baidu.com
