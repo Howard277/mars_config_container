@@ -46,9 +46,9 @@ spring.redis:
 #spring的数据源配置
 spring.datasource:
   type: com.zaxxer.hikari.HikariDataSource
-  jdbcUrl: jdbc:mysql://192.168.13.119:3306/mars_uam
+  jdbcUrl: jdbc:mysql://localhost:3306/mars_uam
   username: root
-  password: Ty234.net!
+  password: 1qaz!QAZ
   driverClassName: com.mysql.jdbc.Driver
   #配置数据库连接池HikariCP
   maximum-pool-size: 50
