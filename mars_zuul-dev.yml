@@ -37,3 +37,4 @@ zuul:
     max-per-route-connections: 20
     time-unit: MILLISECONDS
     time-to-live: 10000
+  retryable: true
