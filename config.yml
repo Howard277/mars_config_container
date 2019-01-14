@@ -3,5 +3,8 @@
 # 注册中心端口8001
 # API Gateway端口8002
 # 权限系统端口8003
-# 客户中心后端端口8004
+# 客户中心后端(django)端口8004
+# 客户中心后端sidecar端口8005
 # pinpoint web 28080
+# 客户中心api后端(django)端口8006
+# 客户中心api后端sidecar端口8007

@@ -1,0 +1,13 @@
+server.port: 8007
+
+# side car 设置
+# side car 监控地址
+sidecar.port: 8006
+sidecar.health-uri: http://localhost:${sidecar.port}/customer/health
+
+# 应用程序在eureka中的显示名称
+spring.application.name: mars_customer_api_sidecar
+# 应用程序实例显示真实ip地址
+eureka.instance.preferIpAddress: true
+# 配置注册中心集群
+eureka.client.service-url.defaultZone: http://localhost:8001/eureka
